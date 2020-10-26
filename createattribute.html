@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+      <title>createAttribute</title> 
+      <style>
+          .democlass
+          {
+              color:green;
+          }
+      </style>    
+    </head>
+    <body>
+                <p5>Come Fast!</p5>
+                <button onclick="myFunction()">Try it</button>
+        <script>
+            'use strict';
+            function myFunction() {
+  const p5 = document.getElementsByTagName("p5")[0];
+  const attr = document.createAttribute("class");
+  attr.value = "democlass";
+  p5.setAttributeNode(attr);
+}
+            
+              
+        </script>
+    </body>
+</html>

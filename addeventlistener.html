@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+      <title>addEvent</title>     
+    </head>
+    <body>
+        <table id='users-table' class='html-table'></table>
+            <table id='employee-table' class='html-table'></table>
+                <p id='description' class='user.description'>Hello World!</p>
+        <script>
+            'use strict';
+            function handleClick(event)
+            {
+                // alert('Clicked');
+                elem.innerHTML='<b>sweety clicked the element<b>';
+                // elem.innerText='<b>sweety clicked the element<b>';
+                
+            }
+              const elem=document.getElementById('description');
+              elem.addEventListener('click', handleClick);
+        </script>
+    </body>
+</html>
